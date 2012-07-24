@@ -1,6 +1,6 @@
 test for cyclic import
 
-* How to make
+* How to make Main module
 
 $ ghc --make X
 [1 of 4] Compiling A[boot]          ( A.hs-boot, A.o-boot )
@@ -9,3 +9,11 @@ $ ghc --make X
 [4 of 4] Compiling Main             ( X.hs, X.o )
 Linking X ...
 $
+
+* How to make library module
+
+$ ghc --make A
+[1 of 3] Compiling A[boot]          ( A.hs-boot, A.o-boot )
+[2 of 3] Compiling B                ( B.hs, B.o )
+[3 of 3] Compiling A                ( A.hs, A.o )
+
