@@ -1,0 +1,11 @@
+test for cyclic import
+
+* How to make
+
+$ ghc --make X
+[1 of 4] Compiling A[boot]          ( A.hs-boot, A.o-boot )
+[2 of 4] Compiling B                ( B.hs, B.o )
+[3 of 4] Compiling A                ( A.hs, A.o )
+[4 of 4] Compiling Main             ( X.hs, X.o )
+Linking X ...
+$
